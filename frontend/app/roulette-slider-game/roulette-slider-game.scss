@@ -1,0 +1,37 @@
+.roulette-slider-game {
+  .roulette-slider-animate {
+    transition-property: background-position;
+    transition-duration: 6s;
+    transition-timing-function: cubic-bezier(0.15, 0.45, 0.10, 1.00);
+  }
+  .roulette-slider {
+    //noinspection CssUnknownTarget
+    background-image: url('/images/roulette-slides/sprite.png');
+    background-repeat: repeat-x;
+    height: 66px;
+    width: 100%;
+    &::after {
+      content: '';
+      width: 2px;
+      height: 100%;
+      background: #0072ff;
+      display: block;
+      position: relative;
+      left: 50%;
+    }
+  }
+  .bet-region {
+    margin: 64px 0;
+  },
+  .players-region {
+    .red-region{
+      background-color: rgba(255, 58, 63, 0.23);
+    }
+    .black-region{
+      background-color: rgba(0, 0, 0, 0.31);
+    }
+    .green-region{
+      background-color: rgba(0, 255, 61, 0.23);
+    }
+  }
+}
